@@ -1,0 +1,42 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container > p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 

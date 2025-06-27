@@ -1,0 +1,89 @@
+.about-container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.about-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    backdrop-filter: blur(5px);
+}
+
+.about-box h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.about-box p {
+    color: #4CAF50;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.slide-right {
+    animation: slideRight 0.8s forwards;
+    animation-delay: calc(var(--order) * 0.2s);
+}
+
+.slide-left {
+    animation: slideLeft 0.8s forwards;
+    animation-delay: calc(var(--order) * 0.2s);
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+    
+    .about-box {
+        margin: 20px 0;
+    }
+    
+    .about-intro {
+        font-size: 1.1rem;
+    }
+} 
